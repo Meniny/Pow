@@ -51,6 +51,35 @@ v{version}, 2018-05-20
 
 **{name}** is {desc}.
 
+[%header]
+|===
+^m|Type ^m|Preview
+
+|Alert
+|image:./Assets/Previews/alert.png[alert, 200]
+
+|Alert
+|image:./Assets/Previews/float.png[float, 200]
+
+|Forms
+|image:./Assets/Previews/form.png[form, 200]
+
+|Loading
+|image:./Assets/Previews/loading.png[loading, 200]
+
+|Note
+|image:./Assets/Previews/note.png[note, 200]
+
+|Nitification
+|image:./Assets/Previews/notification.png[noti, 200]
+
+|Popup
+|image:./Assets/Previews/popup.png[popup, 200]
+
+|Toast
+|image:./Assets/Previews/toast.png[toast, 200]
+|===
+
 == 📋 Requirements
 
 [%header]
