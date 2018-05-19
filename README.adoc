@@ -51,33 +51,33 @@ v{version}, 2018-05-20
 
 **{name}** is {desc}.
 
-[%header, cols="^.^m,^.^m"]
+[%header, cols="^.^m,^.^m,^.^m,^.^m"]
 |===
-|Type |Preview
+|Type |Preview |Type |Preview
 
 |Alert
-|image:./Assets/Previews/alert.png[alert, 200]
+|image:./Assets/Previews/alert.png[alert]
 
-|Alert
-|image:./Assets/Previews/float.png[float, 200]
+|Floating
+|image:./Assets/Previews/float.png[float]
 
 |Forms
-|image:./Assets/Previews/form.png[form, 200]
+|image:./Assets/Previews/form.png[form]
 
 |Loading
-|image:./Assets/Previews/loading.png[loading, 200]
+|image:./Assets/Previews/loading.png[loading]
 
 |Note
-|image:./Assets/Previews/note.png[note, 200]
+|image:./Assets/Previews/note.png[note]
 
 |Nitification
-|image:./Assets/Previews/notification.png[noti, 200]
+|image:./Assets/Previews/notification.png[noti]
 
 |Popup
-|image:./Assets/Previews/popup.png[popup, 200]
+|image:./Assets/Previews/popup.png[popup]
 
 |Toast
-|image:./Assets/Previews/toast.png[toast, 200]
+|image:./Assets/Previews/toast.png[toast]
 |===
 
 == 📋 Requirements
