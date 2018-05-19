@@ -31,7 +31,27 @@ public extension Pow {
     public static var widthConstant: CGFloat = 250
     public static var duration: PowAttributes.DisplayDuration = 2.5
     
-    public static func toast(title: String, message: String, icon: UIImage, duration: PowAttributes.DisplayDuration = Pow.duration, textColor: PowTextColor = Pow.romance, background: PowBackgroundColor = Pow.nero) {
+    public static func toast(message: String, duration: PowAttributes.DisplayDuration = Pow.duration, textColor: PowTextColor = Pow.romance, background: PowBackgroundColor = Pow.nero) {
+        
+        var attr = PowAttributes.bottomFloat
+        attr.screenInteraction = .forward
+        attr.scroll = .edgeCrossingDisabled(swipeable: true)
+        attr.powInteraction = .dismiss
+        attr.positionConstraints.size = .init(width: .intrinsic, height: message.contains("\n") ? .intrinsic : .constant(value: 50))
+        attr.positionConstraints.maxSize = .init(width: .ratio(value: 1), height: .ratio(value: 1))
+        attr.positionConstraints.verticalOffset = 50
+        attr.statusBarStyle = .default
+        attr.positionConstraints.keyboardRelation = .bind(offset: .init(bottom: 15, screenEdgeResistance: 0))
+        attr.powBackground = .color(color: background)
+        attr.displayDuration = duration
+        
+        let style = PowProperty.LabelStyle(font: .systemFont(ofSize: 14), color: textColor, alignment: .center)
+        let labelContent = PowProperty.LabelContent(text: message, style: style)
+        let contentView = PowNoteMessageView(with: labelContent)
+        display(contentView, using: attr)
+    }
+    
+    public static func richToast(title: String, message: String, icon: UIImage, duration: PowAttributes.DisplayDuration = Pow.duration, textColor: PowTextColor = Pow.romance, background: PowBackgroundColor = Pow.nero) {
         
         var attr = PowAttributes.bottomFloat
         attr.screenInteraction = .forward
@@ -153,7 +173,6 @@ public extension Pow {
         attr.screenInteraction = .forward
         attr.scroll = .edgeCrossingDisabled(swipeable: true)
         attr.powInteraction = .dismiss
-//        let statusBarHeight = UIApplication.shared.statusBarFrame.maxY
         attr.positionConstraints.size = .init(width: .ratio(value: 1), height: .constant(value: 44))
         attr.positionConstraints.maxSize = .init(width: .ratio(value: 1), height: .ratio(value: 1))
         attr.statusBarStyle = .default
@@ -179,9 +198,8 @@ public extension Pow {
         
         var attr = PowAttributes.topNote
         attr.screenInteraction = .forward
-        attr.scroll = .edgeCrossingDisabled(swipeable: true)
-        attr.powInteraction = .dismiss
-//        let statusBarHeight = UIApplication.shared.statusBarFrame.maxY
+        attr.scroll = .disabled
+        attr.powInteraction = .absorbTouches
         attr.positionConstraints.size = .init(width: .ratio(value: 1), height: .constant(value: 44))
         attr.positionConstraints.maxSize = .init(width: .ratio(value: 1), height: .ratio(value: 1))
         attr.statusBarStyle = .default
@@ -251,7 +269,7 @@ public extension Pow {
         var tfs = [PowProperty.TextFieldContent]()
         for f in fields {
             let placeholder = PowProperty.LabelContent(text: f.placeholder, style: .init(font: .systemFont(ofSize: 14), color: UIColor(white: 0.8, alpha: 1)))
-            let textField = PowProperty.TextFieldContent.init(keyboardType: f.keyboard, placeholder: placeholder, textStyle: .init(font: .systemFont(ofSize: 14), color: textColor), leadingImage: f.image, bottomBorderColor: textColor)
+            let textField = PowProperty.TextFieldContent.init(keyboardType: f.keyboard, placeholder: placeholder, textStyle: .init(font: .systemFont(ofSize: 14), color: textColor), isSecure: f.password, leadingImage: f.image, bottomBorderColor: textColor)
             tfs.append(textField)
         }
         let label = PowProperty.LabelContent(text: button, style: .init(font: .systemFont(ofSize: 14), color: buttonTitleColor))
@@ -274,7 +292,7 @@ public extension Pow {
         display(contentView!, using: attr)
     }
     
-    public static func custom(view: UIView, position: PowAttributes.Position, duration: PowAttributes.DisplayDuration = Pow.duration, width: PowAttributes.PositionConstraints.Edge = .intrinsic, height: PowAttributes.PositionConstraints.Edge = .intrinsic, background: UIColor = Pow.romance) {
+    public static func modal(view: UIView, position: PowAttributes.Position, duration: PowAttributes.DisplayDuration = Pow.duration, width: PowAttributes.PositionConstraints.Edge = .intrinsic, height: PowAttributes.PositionConstraints.Edge = .intrinsic, corners: PowAttributes.RoundCorners = .top(radius: 10), background: UIColor = Pow.romance) {
         var attr = PowAttributes.bottomToast
         attr.screenInteraction = .dismiss
         attr.scroll = .edgeCrossingDisabled(swipeable: true)
@@ -285,5 +303,8 @@ public extension Pow {
         attr.positionConstraints.keyboardRelation = .bind(offset: .init(bottom: 15, screenEdgeResistance: 0))
         attr.powBackground = .color(color: background)
         attr.displayDuration = duration
+        attr.roundCorners = corners
+        
+        display(view, using: attr)
     }
 }

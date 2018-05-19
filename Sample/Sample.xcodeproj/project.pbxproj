@@ -103,6 +103,11 @@
 		5C70FD2120B0DE110043A369 /* NibExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibExampleView.xib; sourceTree = "<group>"; };
 		5C70FD2220B0DE110043A369 /* FormFieldPresetFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldPresetFactory.swift; sourceTree = "<group>"; };
 		5C70FD4420B0DE700043A369 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CFD85F120B0E6D300110B45 /* _config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = _config.yml; path = ../_config.yml; sourceTree = "<group>"; };
+		5CFD85F220B0E6D300110B45 /* Pow.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pow.podspec; path = ../Pow.podspec; sourceTree = "<group>"; };
+		5CFD85F320B0E6D300110B45 /* README.adoc */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.adoc; path = ../README.adoc; sourceTree = "<group>"; };
+		5CFD85F420B0E6D400110B45 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
+		5CFD85F520B0E6D400110B45 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		C4FD055C370D14964E3F638D /* Pods-Core-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Core-Sample/Pods-Core-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		CBFBD9D3B72114CE9F7B6A62 /* Pods_Core_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBCF6819EB5ADFE8F4C5EE1 /* Pods-Core-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Core-Sample/Pods-Core-Sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +137,11 @@
 		5C70FC6320B0DC7E0043A369 = {
 			isa = PBXGroup;
 			children = (
+				5CFD85F120B0E6D300110B45 /* _config.yml */,
+				5CFD85F520B0E6D400110B45 /* .gitignore */,
+				5CFD85F420B0E6D400110B45 /* LICENSE.md */,
+				5CFD85F220B0E6D300110B45 /* Pow.podspec */,
+				5CFD85F320B0E6D300110B45 /* README.adoc */,
 				5C70FCAD20B0DCE60043A369 /* Images.xcassets */,
 				5C70FC8620B0DC920043A369 /* Core-Sample */,
 				5C70FC9C20B0DC9D0043A369 /* Extra-Sample */,

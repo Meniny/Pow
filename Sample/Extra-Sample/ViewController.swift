@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         switch index {
         case 0:
-            Pow.toast(title: t, message: m, icon: i)
+            Pow.loading(message: m, duration: 5)
         case 1:
             Pow.notification(title: t, message: m, icon: i)
         case 2:
@@ -45,10 +45,14 @@ class ViewController: UIViewController {
                 Pow.Form.init("Password", image: ic, password: true)
                 ], button: "Signup", action: { inputs in return true })
         case 7:
-            Pow.loading(message: m, duration: 5)
+            Pow.richToast(title: t, message: m, icon: i)
         case 8:
+            Pow.toast(message: [m,m,m,m,m,m].joined(separator: "\n"))
+        case 9:
+            Pow.toast(message: m)
+        case 10:
             let v = UIView.init()
-            Pow.custom(view: v, position: .bottom, width: .ratio(value: 0.9), height: .constant(value: 200), background: #colorLiteral(red: 0.10, green:0.62, blue:0.90, alpha:1.00))
+            Pow.modal(view: v, position: .bottom, width: .ratio(value: 1), height: .constant(value: 320), background: #colorLiteral(red: 0.10, green:0.62, blue:0.90, alpha:1.00))
         default:
             index = 0
             show()

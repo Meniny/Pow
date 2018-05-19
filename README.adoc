@@ -4,7 +4,7 @@
 :mail: admin@meniny.cn
 :desc: a banner / pop-up displayer for iOS in Swift
 :icon: {name}.png
-:version: 1.0.0
+:version: 1.0.1
 :na: N/A
 :ios: 9.0
 :macos: {na}

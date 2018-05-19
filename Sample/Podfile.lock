@@ -1,9 +1,8 @@
 PODS:
   - PapaLayout (1.0.0)
-  - Pow/Core (1.0.0):
+  - Pow/Core (1.0.1):
     - PapaLayout
-  - Pow/Extra (1.0.0):
-    - PapaLayout
+  - Pow/Extra (1.0.1):
     - Pow/Core
 
 DEPENDENCIES:
@@ -20,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PapaLayout: 5c91e852ad4652a52b8e1b5d1e910538df2078e8
-  Pow: 7274a70e61e91ffeafc8a4e1164a8df23e5df6cf
+  Pow: 6bb4542cc106920feae982f7f74bb66d1028e114
 
 PODFILE CHECKSUM: bcb178a5ecca24138fe8e4beb1be33ff4fb54aad
 
