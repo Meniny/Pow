@@ -1,0 +1,27 @@
+PODS:
+  - PapaLayout (1.0.0)
+  - Pow/Core (1.0.0):
+    - PapaLayout
+  - Pow/Extra (1.0.0):
+    - PapaLayout
+    - Pow/Core
+
+DEPENDENCIES:
+  - Pow/Core (from `../`)
+  - Pow/Extra (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PapaLayout
+
+EXTERNAL SOURCES:
+  Pow:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PapaLayout: 5c91e852ad4652a52b8e1b5d1e910538df2078e8
+  Pow: 7274a70e61e91ffeafc8a4e1164a8df23e5df6cf
+
+PODFILE CHECKSUM: bcb178a5ecca24138fe8e4beb1be33ff4fb54aad
+
+COCOAPODS: 1.5.2

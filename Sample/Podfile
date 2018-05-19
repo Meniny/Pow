@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+
+use_frameworks!
+
+target 'Core-Sample' do
+	pod 'Pow/Core', :path => '../'
+end
+
+target 'Extra-Sample' do
+    pod 'Pow/Extra', :path => '../'
+end
