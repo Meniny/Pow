@@ -8,7 +8,6 @@
 
 import UIKit
 import PapaLayout
-import PapaLayout
 
 class PowView: PowStyleView {
     

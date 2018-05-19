@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PapaLayout
 
 extension UIEdgeInsets {
     var hasVerticalInsets: Bool {

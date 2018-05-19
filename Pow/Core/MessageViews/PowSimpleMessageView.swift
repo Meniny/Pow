@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PapaLayout
 
 public class PowSimpleMessageView: UIView {
 

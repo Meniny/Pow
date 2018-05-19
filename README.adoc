@@ -51,9 +51,9 @@ v{version}, 2018-05-20
 
 **{name}** is {desc}.
 
-[%header]
+[%header, cols="^.^m,^.^m"]
 |===
-^m|Type ^m|Preview
+|Type |Preview
 
 |Alert
 |image:./Assets/Previews/alert.png[alert, 200]

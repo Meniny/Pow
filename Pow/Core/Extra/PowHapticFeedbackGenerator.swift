@@ -6,7 +6,8 @@
 //  Copyright (c) 2018 Meniny Lab. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import PapaLayout
 
 public struct PowHapticFeedbackGenerator {
     @available(iOS 10.0, *)

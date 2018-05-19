@@ -6,17 +6,18 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
+  s.swift_version    = '4.1'
   s.homepage         = 'https://github.com/Meniny/Pow'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author           = { 'Elias Abel' => 'admin@meniny.cn' }
   s.source           = { :git => 'https://github.com/Meniny/Pow.git', :tag => s.version.to_s }
 
   s.frameworks = 'UIKit'
-  s.dependency   'PapaLayout'
 
   s.default_subspecs = 'Core', 'Extra'
 
   s.subspec 'Core' do |sp|
+    sp.dependency      'PapaLayout'
     sp.source_files  = 'Pow/Core/**/*.swift'
   end
 

@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import PapaLayout
 
 public class PowImageNoteMessageView: PowAccessoryNoteMessageView {
     

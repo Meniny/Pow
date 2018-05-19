@@ -5,7 +5,8 @@
 //  Created by Elias Abel on 4/24/18.
 //
 
-import Foundation
+import UIKit
+import PapaLayout
 
 extension UIRectCorner {
     static let top: UIRectCorner = [.topLeft, .topRight]

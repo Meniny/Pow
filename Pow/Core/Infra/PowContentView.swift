@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PapaLayout
 
 protocol EntryContentViewDelegate: class {
     func changeToActive(withAttributes attributes: PowAttributes)

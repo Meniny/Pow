@@ -8,7 +8,6 @@
 
 import UIKit
 import PapaLayout
-import PapaLayout
 
 /**
  Dynamic button bar view

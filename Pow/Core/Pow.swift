@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import PapaLayout
 
 /**
  A stateless, threadsafe pow point that contains the display and the dismissal logic of entries.

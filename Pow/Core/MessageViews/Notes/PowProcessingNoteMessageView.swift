@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PapaLayout
 
 public class PowProcessingNoteMessageView: PowAccessoryNoteMessageView {
     

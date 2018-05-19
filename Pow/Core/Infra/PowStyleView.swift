@@ -5,6 +5,9 @@
 //  Created by Elias Abel on 4/28/18.
 //
 
+import UIKit
+import PapaLayout
+
 class PowStyleView: UIView {
     
     private lazy var borderLayer: CAShapeLayer = {
